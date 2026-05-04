@@ -1,9 +1,9 @@
 import axios from "axios";
 
 // Thêm dòng này để nếu biến môi trường lỗi, nó sẽ lấy giá trị mặc định
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000"; 
+const API_URL = import.meta.env.VITE_API_URL || "https://backend-ai-j0kh.onrender.com"; 
 
-console.log("Dòng này phải hiện ra http://localhost:8000:", API_URL);
+console.log("Dòng này phải hiện ra https://backend-ai-j0kh.onrender.com:", API_URL);
 
 export const predictAudio = async (file) => {
     const formData = new FormData();
